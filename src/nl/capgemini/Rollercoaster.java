@@ -11,8 +11,9 @@ public class Rollercoaster {
 	public int trains;
 	public int speed;
 	public boolean inversions;
+	public int inversionAmount;
 	
-	public Rollercoaster(String name, String park, String manufacturer,boolean material, double height, int lenght, boolean inverted, int trains, int speed, boolean inversions){
+	public Rollercoaster(String name, String park, String manufacturer,boolean material, double height, int lenght, boolean inverted, int trains, int speed, boolean inversions, int inversionAmount){
 		this.name = name;
 		this.park = park;
 		this.manufacturer = manufacturer;
@@ -23,18 +24,19 @@ public class Rollercoaster {
 		this.trains = trains;
 		this.speed = speed;
 		this.inversions = inversions;
+		this.inversionAmount = inversionAmount;
 		
 	}
 	public void displayCoaster(){
 		System.out.println("The rollercoaster is named: "+this.name+ ".");
 		System.out.println(this.name+ " is built in "+this.park+ ".");
 		System.out.println(this.name+ " is built by "+this.manufacturer+ ".");
-		System.out.println(this.name+ " has a speed of "+this.speed+ " kilometers per hour.");
 		String woodSteel;
 		if(this.material){
 			woodSteel = "steel";
 		}else{woodSteel = "wood";}
-		System.out.println(this.name+ " is made of "+woodSteel+"."); 
+		System.out.println(this.name+ " is made of "+woodSteel+".");
+		System.out.println(this.name+ " has a speed of "+this.speed+ " kilometers per hour.");
 		System.out.println(this.name+ " has a height of "+this.height+ " meters.");
 		System.out.println(this.name+ " has a lenght of "+this.lenght+ " meters.");
 		String invertedCheck;
@@ -47,8 +49,10 @@ public class Rollercoaster {
 		String inversionCheck;
 		if(this.inversions){
 			inversionCheck = "does";
-		}else{inversionCheck = "does not";}
-		System.out.println(this.name+ " "+inversionCheck+" have inversions."); 
+			System.out.println(this.name+ " "+inversionCheck+" have "+this.inversionAmount+" inversions.");
+		}else{inversionCheck = "does not";
+		System.out.println(this.name+ " "+inversionCheck+" have inversions.");
 		}
+	}
 	}
 
