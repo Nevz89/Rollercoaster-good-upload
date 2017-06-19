@@ -17,8 +17,8 @@ public class Coastertester {
 		list.add(kingDaKa);
 		Rollercoaster baron1898 = new Rollercoaster("Baron 1898","Efteling", "Bolliger & Mabillard",true, 37.5, 501,false, 3, 90, true, 2);
 		list.add(baron1898);
-		Rollercoaster RockNRollercoaster = new Rollercoaster("Rock N Rollercoaster", "Disney's Hollywood Studios & Walt Disney Studio's", "Vekoma", true, 26.3, 1037, false, 4, 90, true, 3);
-		list.add(RockNRollercoaster);
+		Rollercoaster rockNRollercoaster = new Rollercoaster("Rock N Rollercoaster", "Disney's Hollywood Studios & Walt Disney Studio's", "Vekoma", true, 26.3, 1037, false, 4, 90, true, 3);
+		list.add(rockNRollercoaster);
 		Rollercoaster elCondor = new Rollercoaster("El Condor", "Walibi Holland", "Vekoma", true, 31.0, 662, true, 3, 80, true, 5);
 		list.add(elCondor);
 		Rollercoaster smiler = new Rollercoaster("The Smiler", "Alton Towers", "Gerstlauer", true, 30.0, 1170, true, 5, 85, true, 14);

@@ -48,8 +48,8 @@ public class Rollercoaster {
 		System.out.println(this.name+ " has a speed of: "+this.speed+ " kilometers per hour.");
 		String inversionCheck;
 		if(this.inversions){
-			inversionCheck = "does";
-			System.out.println(this.name+ " "+inversionCheck+" have "+this.inversionAmount+" inversions.");
+			inversionCheck = "has";
+			System.out.println(this.name+ " "+inversionCheck+" got "+this.inversionAmount+" inversions.");
 		}else{inversionCheck = "does not";
 		System.out.println(this.name+ " "+inversionCheck+" have inversions.");
 		}
