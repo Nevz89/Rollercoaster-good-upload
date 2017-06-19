@@ -12,8 +12,9 @@ public class Rollercoaster {
 	public int speed;
 	public boolean inversions;
 	public int inversionAmount;
+	public boolean launch;
 	
-	public Rollercoaster(String name, String park, String manufacturer,boolean material, double height, int lenght, boolean inverted, int trains, int speed, boolean inversions, int inversionAmount){
+	public Rollercoaster(String name, String park, String manufacturer,boolean material, double height, int lenght, boolean inverted, int trains, int speed, boolean inversions, int inversionAmount, boolean launch){
 		this.name = name;
 		this.park = park;
 		this.manufacturer = manufacturer;
@@ -25,6 +26,7 @@ public class Rollercoaster {
 		this.speed = speed;
 		this.inversions = inversions;
 		this.inversionAmount = inversionAmount;
+		this.launch = launch;
 		
 	}
 	public void displayCoaster(){
@@ -46,6 +48,9 @@ public class Rollercoaster {
 		System.out.println(this.name+ " "+invertedCheck+" have an inverted track.");
 		System.out.println(this.name+ " has "+this.trains+ " trains.");
 		System.out.println(this.name+ " has a speed of: "+this.speed+ " kilometers per hour.");
+		if(this.launch){
+			System.out.println(this.name+ " is being launched.");
+		}else{System.out.println(this.name+ " has a chainlift");}
 		String inversionCheck;
 		if(this.inversions){
 			inversionCheck = "has";
