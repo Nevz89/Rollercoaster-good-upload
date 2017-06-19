@@ -1,3 +1,4 @@
+package nl.capgemini;
 
 public class Rollercoaster {
 	public String name;
