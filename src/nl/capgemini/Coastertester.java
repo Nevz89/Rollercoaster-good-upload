@@ -23,7 +23,7 @@ public class Coastertester {
 		list.add(elCondor);
 		Rollercoaster smiler = new Rollercoaster("The Smiler", "Alton Towers", "Gerstlauer", true, 30.0, 1170, true, 5, 85, true, 14, false);
 		list.add(smiler);
-		Rollercoaster fullThrottle = new Rollercoaster("Full Throttle", "Six Flags Magic Mountain", "Premier Rides", true, 42.0, 670, true, 2, 112, true, 1, true);
+		Rollercoaster fullThrottle = new Rollercoaster("Full Throttle", "Six Flags Magic Mountain", "Premier Rides", true, 42.0, 670, false, 2, 112, true, 1, true);
 		list.add(fullThrottle);
 		for(Object l : list){
 		((Rollercoaster) l).displayCoaster();

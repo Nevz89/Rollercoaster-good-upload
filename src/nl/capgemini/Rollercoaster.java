@@ -51,10 +51,15 @@ public class Rollercoaster {
 		if(this.launch){
 			System.out.println(this.name+ " is being launched.");
 		}else{System.out.println(this.name+ " has a chainlift");}
+		String inversionPlural;
+		if(this.inversionAmount > 1)
+			inversionPlural = "s";
+		else
+			inversionPlural = "";
 		String inversionCheck;
 		if(this.inversions){
 			inversionCheck = "has";
-			System.out.println(this.name+ " "+inversionCheck+" got "+this.inversionAmount+" inversions.");
+			System.out.println(this.name+ " "+inversionCheck+" got "+this.inversionAmount+" inversion"+inversionPlural+".");
 		}else{inversionCheck = "does not";
 		System.out.println(this.name+ " "+inversionCheck+" have inversions.");
 		}
