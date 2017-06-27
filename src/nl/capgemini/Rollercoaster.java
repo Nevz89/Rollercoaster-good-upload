@@ -1,5 +1,6 @@
 package nl.capgemini;
 
+
 public class Rollercoaster {
 	public String name;
 	public String park;
@@ -14,6 +15,7 @@ public class Rollercoaster {
 	public int inversionAmount;
 	public boolean launch;
 	
+	
 	public Rollercoaster(String name, String park, String manufacturer,boolean material, double height, int lenght, boolean inverted, int trains, int speed, boolean inversions, int inversionAmount, boolean launch){
 		this.name = name;
 		this.park = park;
@@ -27,8 +29,8 @@ public class Rollercoaster {
 		this.inversions = inversions;
 		this.inversionAmount = inversionAmount;
 		this.launch = launch;
-		
 	}
+	
 	public void displayCoaster(){
 		System.out.println("The rollercoaster is named: "+this.name+ ".");
 		System.out.println(this.name+ " is built in "+this.park+ ".");
@@ -64,5 +66,7 @@ public class Rollercoaster {
 		System.out.println(this.name+ " "+inversionCheck+" have inversions.");
 		}
 	}
-	}
+}
+
+
 

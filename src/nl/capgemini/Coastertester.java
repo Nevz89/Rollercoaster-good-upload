@@ -1,9 +1,12 @@
 package nl.capgemini;
 import java.util.ArrayList;
+import nl.capgemini.RollerCoasterService;
 
 
 public class Coastertester {
 	public static void main(String [] args){
+		
+		
 		ArrayList <Rollercoaster> list = new ArrayList <Rollercoaster> ();
 		Rollercoaster taron = new Rollercoaster("Taron" ,"Phantasialand", "Intamin",true, 29.0, 1320,false, 4, 117, false, 0, true);
 		list.add(taron);
@@ -25,9 +28,36 @@ public class Coastertester {
 		list.add(smiler);
 		Rollercoaster fullThrottle = new Rollercoaster("Full Throttle", "Six Flags Magic Mountain", "Premier Rides", true, 42.0, 670, false, 2, 112, true, 1, true);
 		list.add(fullThrottle);
-		for(Object l : list){
+		/*for(Object l : list){
 		((Rollercoaster) l).displayCoaster();
+		System.out.println("");*/
+		
+		RollerCoasterService testie = new RollerCoasterService();
+		testie.addRollerCoasterByName(taron);
+		testie.addRollerCoasterByName(elToro);
+		testie.addRollerCoasterByName(banshee);
+		testie.addRollerCoasterByName(wildFire);
+		testie.addRollerCoasterByName(kingDaKa);
+		testie.addRollerCoasterByName(rockNRollercoaster);
+		testie.addRollerCoasterByName(baron1898);
+		testie.addRollerCoasterByName(elCondor);
+		testie.addRollerCoasterByName(fullThrottle);
+		testie.addRollerCoasterByName(smiler);
+		
 		System.out.println("");
+		
+		testie.removeRollerCoasterByName(taron);
+		testie.removeRollerCoasterByName(baron1898);
+		
+		System.out.println("");
+		
+		testie.showAllRollerCoasters();
+		
+		System.out.println("");
+		
+		testie.updateRollerCoasterByName(banshee);
+	
+		
 		}
 	}
-}
+
