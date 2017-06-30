@@ -56,7 +56,9 @@ public class Coastertester {
 		System.out.println("");
 		
 		testie.updateRollerCoasterByName(banshee);
-	
+		
+		testie.showAllRollerCoasters();
+		
 		
 		}
 	}

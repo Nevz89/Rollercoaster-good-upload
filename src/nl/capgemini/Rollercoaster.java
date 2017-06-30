@@ -15,7 +15,6 @@ public class Rollercoaster {
 	public int inversionAmount;
 	public boolean launch;
 	
-	
 	public Rollercoaster(String name, String park, String manufacturer,boolean material, double height, int lenght, boolean inverted, int trains, int speed, boolean inversions, int inversionAmount, boolean launch){
 		this.name = name;
 		this.park = park;
@@ -29,6 +28,21 @@ public class Rollercoaster {
 		this.inversions = inversions;
 		this.inversionAmount = inversionAmount;
 		this.launch = launch;
+	}
+	
+	public void RollerConstruct(Rollercoaster o){
+		this.name = o.name;
+		this.park = o.park;
+		this.manufacturer = o.manufacturer;
+		this.material = o.material;
+		this.height = o.height;
+		this.lenght = o.lenght;
+		this.inverted = o.inverted;
+		this.trains = o.trains;
+		this.speed = o.speed;
+		this.inversions = o.inversions;
+		this.inversionAmount = o.inversionAmount;
+		this.launch = o.launch;
 	}
 	
 	public void displayCoaster(){
